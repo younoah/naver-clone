@@ -210,7 +210,9 @@
 }
 
 .vaccine {
-  height: 80px;
+  &__image {
+    width: 80%;
+  }
 }
 .card-lg {
   height: 326px;
