@@ -46,6 +46,13 @@ a {
   visibility: hidden;
 }
 
+.scroll {
+  overflow: hidden;
+  overflow-x: auto;
+  width: 440px;
+  white-space: nowrap;
+}
+
 .header {
   position: relative;
   width: 100%;
@@ -202,6 +209,7 @@ a {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  margin-left: 16px;
 }
 .content__card__item {
   width: 31.8vw;
@@ -413,6 +421,35 @@ a {
 
 .now {
   height: 224px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.now__image {
+  width: 48px;
+  height: 14px;
+  margin: 24px;
+  align-self: flex-start;
+  display: block;
+  background: url("/naver/src/images/sp/sp_search.png");
+  background-repeat: no-repeat;
+  background-position: -215px -318px;
+  background-size: 384px 381px;
+  content: "";
+}
+.now__list {
+  display: flex;
+  -ms-overflow-style: none;
+}
+.now__list::-webkit-scrollbar {
+  display: none;
+}
+.now__item__image {
+  position: relative;
+  width: 112px;
+  height: 112px;
+  margin: 8px 4px 48px 4px;
+  border-radius: 6px;
 }
 
 .vaccine__image {
@@ -471,6 +508,30 @@ a {
   .content__card__item {
     width: 100%;
   }
+}
+.footer {
+  margin: 56px 0 128px 0;
+}
+.footer__util {
+  margin: 10px 0;
+  color: #929294;
+  text-align: center;
+}
+.footer__util__link {
+  padding: 3px 9px;
+  font-size: 13px;
+  letter-spacing: -0.5px;
+}
+.footer__util__logo {
+  width: 74px;
+  height: 14px;
+  margin: 0 auto;
+  display: block;
+  background: url("/naver/src/images/sp/sp_main.png");
+  background-repeat: no-repeat;
+  background-position: 0 -100px;
+  background-size: 196px 182px;
+  content: "";
 }
 
 /*# sourceMappingURL=main.css.map */

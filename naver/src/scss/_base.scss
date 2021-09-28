@@ -45,3 +45,10 @@ a {
 .hidden {
   visibility: hidden;
 }
+
+.scroll {
+  overflow: hidden;
+  overflow-x: auto;
+  width: 440px;
+  white-space: nowrap;
+}
