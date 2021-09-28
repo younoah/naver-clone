@@ -52,25 +52,22 @@
       </header>
 
       <!-- SearchBar -->
-      <form class="searchbar" action="#" method="#">
-        <a href="#" class="searchbar__link">
-          <span class="searchbar__link__logo"></span>
-          <span class="blind">네이버 로고</span>
-        </a>
-        <label for="search" class="blind">검색어 입력</label>
-        <input
-          class="searchbar__input"
-          type="search"
-          id="search"
-          title="검색어를 입력해주세요."
-          placeholder="검색어를 입력해주세요."
-          autocomplete="off"
-        />
-        <button type="submit" class="searchbar__button-voice">
-          <span class="earchbar__button-voice__image"></span>
-          <span class="blind">음성 검색</span>
-        </button>
-      </form>
+      <div class="searchbar">
+        <form class="searchbar__form" action="#" method="#">
+          <a href="#" class="searchbar__logo">
+            <span class="searchbar__logo__image"></span>
+          </a>
+          <input
+            class="searchbar__input"
+            type="search"
+            id="search"
+            title="검색어를 입력해주세요."
+            placeholder="검색어를 입력해주세요."
+            autocomplete="off"
+          />
+          <button type="button" class="searchbar__button-voice"></button>
+        </form>
+      </div>
 
       <!-- NavBar -->
       <nav class="navbar">
