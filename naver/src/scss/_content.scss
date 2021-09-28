@@ -1,0 +1,13 @@
+@import './mixins/image';
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__ad {
+    margin: 64px auto 0px auto;
+    &__image {
+      width: 375px;
+    }
+  }
+}
