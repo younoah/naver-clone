@@ -14,7 +14,7 @@
 
   &__card {
     $gap: 16px;
-    max-height: 680px;
+    max-height: 600px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -98,37 +98,90 @@
 
   &__more {
     margin: 0 auto;
+    text-align: center;
     color: grey;
   }
 }
-.vaccine {
-  height: 79px;
-}
-.covid {
-  height: 384px;
-  margin-bottom: 0;
-}
-.stock {
-  height: 326px;
-}
-.now {
-  height: 230px;
-  margin-bottom: 60px;
-}
-.system {
-  height: 50px;
-  margin-right: 0;
-}
-.card {
-  height: 178px;
-  margin-right: 0;
-}
-.shopping {
-  height: 230px;
-  margin-right: 0;
+
+.card-sm {
+  display: flex;
+  justify-content: space-between;
+  &__image {
+    width: 70%;
+  }
+  &__close {
+    width: 16px;
+    height: 16px;
+    margin: 8px;
+    @include setImage(
+      $url: '/naver/src/images/sp/sp_search.png',
+      $size: 384px 381px,
+      $position: -354px -294px,
+      $display: inline-block
+    );
+  }
 }
 
-@media (max-width: 1111px) {
+.ai {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+
+  &__wrap {
+    display: flex;
+    align-items: center;
+  }
+
+  &__image {
+    width: 40px;
+    height: 40px;
+    margin: 12px;
+    @include setImage(
+      $url: '/naver/src/images/sp/sp_search.png',
+      $size: 384px 381px,
+      $position: -261px -135px
+    );
+  }
+
+  &__text {
+    margin-left: 8px;
+    font-size: 15px;
+  }
+
+  &__more {
+    margin: 16px;
+    font-size: 14px;
+    color: #03cf5d;
+  }
+  &__more::after {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    margin: 0 2px 1px 2px;
+    border: solid #03c95b;
+    border-width: 1px 1px 0 0;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    content: '';
+  }
+}
+
+.system {
+  height: 326px;
+}
+
+.now {
+  height: 224px;
+}
+
+.vaccine {
+  height: 80px;
+}
+.card-lg {
+  height: 326px;
+}
+
+@media (max-width: 1024px) {
   .content__card {
     max-height: 1000px;
   }
@@ -136,39 +189,9 @@
   .content__card__item {
     width: 48vw;
   }
-
-  // .weather {
-  //   order: 0;
-  // }
-  // .vaccine {
-  //   order: 1;
-  // }
-  // .covid {
-  //   order: 2;
-  // }
-  // .stock {
-  //   order: 3;
-  //   margin-bottom: 16px;
-  // }
-  // .now {
-  //   order: 4;
-  //   margin-bottom: 0;
-  // }
-  // .system {
-  //   order: 5;
-  //   margin-right: 0;
-  // }
-  // .card {
-  //   order: 6;
-  //   margin-right: 0;
-  // }
-  // .shopping {
-  //   order: 7;
-  //   margin-right: 0;
-  // }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 768px) {
   .content__card {
     max-height: none;
   }
@@ -176,31 +199,4 @@
   .content__card__item {
     width: 100%;
   }
-
-  // .weather {
-  //   order: 0;
-  // }
-  // .vaccine {
-  //   order: 1;
-  // }
-  // .covid {
-  //   order: 2;
-  // }
-  // .stock {
-  //   order: 3;
-  // }
-  // .now {
-  //   order: 4;
-  // }
-  // .system {
-  //   order: 5;
-  //   margin-bottom: 16px;
-  // }
-  // .card {
-  //   order: 6;
-  //   margin-bottom: 0;
-  // }
-  // .shopping {
-  //   display: none;
-  // }
 }

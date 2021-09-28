@@ -33,17 +33,6 @@ a {
   color: inherit;
 }
 
-em {
-  font-style: normal;
-}
-
-h1,
-h2,
-h3,
-h4 {
-  padding: 0;
-}
-
 .blind {
   position: absolute;
   width: 1px;
@@ -51,4 +40,8 @@ h4 {
   margin: -1px;
   overflow: hidden;
   clip: rect(0 0 0 0);
+}
+
+.hidden {
+  visibility: hidden;
 }

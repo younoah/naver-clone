@@ -33,17 +33,6 @@ a {
   color: inherit;
 }
 
-em {
-  font-style: normal;
-}
-
-h1,
-h2,
-h3,
-h4 {
-  padding: 0;
-}
-
 .blind {
   position: absolute;
   width: 1px;
@@ -51,6 +40,10 @@ h4 {
   margin: -1px;
   overflow: hidden;
   clip: rect(0 0 0 0);
+}
+
+.hidden {
+  visibility: hidden;
 }
 
 .header {
@@ -205,7 +198,7 @@ h4 {
   width: 375px;
 }
 .content__card {
-  max-height: 680px;
+  max-height: 600px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -280,43 +273,87 @@ h4 {
 }
 .weather__more {
   margin: 0 auto;
+  text-align: center;
   color: grey;
 }
 
-.vaccine {
-  height: 79px;
+.card-sm {
+  display: flex;
+  justify-content: space-between;
+}
+.card-sm__image {
+  width: 70%;
+}
+.card-sm__close {
+  width: 16px;
+  height: 16px;
+  margin: 8px;
+  display: inline-block;
+  background: url("/naver/src/images/sp/sp_search.png");
+  background-repeat: no-repeat;
+  background-position: -354px -294px;
+  background-size: 384px 381px;
+  content: "";
 }
 
-.covid {
-  height: 384px;
-  margin-bottom: 0;
+.ai {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+}
+.ai__wrap {
+  display: flex;
+  align-items: center;
+}
+.ai__image {
+  width: 40px;
+  height: 40px;
+  margin: 12px;
+  display: block;
+  background: url("/naver/src/images/sp/sp_search.png");
+  background-repeat: no-repeat;
+  background-position: -261px -135px;
+  background-size: 384px 381px;
+  content: "";
+}
+.ai__text {
+  margin-left: 8px;
+  font-size: 15px;
+}
+.ai__more {
+  margin: 16px;
+  font-size: 14px;
+  color: #03cf5d;
+}
+.ai__more::after {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  margin: 0 2px 1px 2px;
+  border: solid #03c95b;
+  border-width: 1px 1px 0 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  content: "";
 }
 
-.stock {
+.system {
   height: 326px;
 }
 
 .now {
-  height: 230px;
-  margin-bottom: 60px;
+  height: 224px;
 }
 
-.system {
-  height: 50px;
-  margin-right: 0;
+.vaccine {
+  height: 80px;
 }
 
-.card {
-  height: 178px;
-  margin-right: 0;
+.card-lg {
+  height: 326px;
 }
 
-.shopping {
-  height: 230px;
-  margin-right: 0;
-}
-
-@media (max-width: 1111px) {
+@media (max-width: 1024px) {
   .content__card {
     max-height: 1000px;
   }
@@ -325,7 +362,7 @@ h4 {
     width: 48vw;
   }
 }
-@media (max-width: 640px) {
+@media (max-width: 768px) {
   .content__card {
     max-height: none;
   }
