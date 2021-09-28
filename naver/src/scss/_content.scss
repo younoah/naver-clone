@@ -3,7 +3,6 @@
 .content {
   display: flex;
   flex-direction: column;
-  // align-items: center;
 
   &__ad {
     margin: 64px auto 0px auto;
@@ -18,7 +17,7 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin-left: 40px;
+    // margin-left: 40px;
 
     &__item {
       width: 31.8vw;
@@ -30,6 +29,49 @@
       display: flex;
       align-items: center;
       justify-content: center;
+    }
+  }
+
+  &__more-event {
+    margin-top: 24px;
+
+    &__link {
+      width: 240px;
+      height: 60px;
+      margin: 0 auto;
+      border-radius: 26px;
+      background-color: #fff;
+      display: flex;
+      align-items: center;
+    }
+
+    &__link::after {
+      width: 13px;
+      height: 13px;
+      margin: 2px 5px 0 5px;
+      @include setImage(
+        $url: '/naver/src/images/sp/sp_search.png',
+        $size: 384px 381px,
+        $position: -288px -226px
+      );
+    }
+
+    &__image {
+      margin-left: 24px;
+      width: 56px;
+      height: 53px;
+      margin-right: 5px;
+      @include setImage(
+        $url: '/naver/src/images/sp/sp_search.png',
+        $size: 384px 381px,
+        $position: 0 0
+      );
+    }
+
+    &__text {
+      margin-left: 16px;
+      font-size: 15px;
+      color: grey;
     }
   }
 }

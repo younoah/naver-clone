@@ -202,7 +202,6 @@ a {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  margin-left: 40px;
 }
 .content__card__item {
   width: 31.8vw;
@@ -214,6 +213,46 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.content__more-event {
+  margin-top: 24px;
+}
+.content__more-event__link {
+  width: 240px;
+  height: 60px;
+  margin: 0 auto;
+  border-radius: 26px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+}
+.content__more-event__link::after {
+  width: 13px;
+  height: 13px;
+  margin: 2px 5px 0 5px;
+  display: block;
+  background: url("/naver/src/images/sp/sp_search.png");
+  background-repeat: no-repeat;
+  background-position: -288px -226px;
+  background-size: 384px 381px;
+  content: "";
+}
+.content__more-event__image {
+  margin-left: 24px;
+  width: 56px;
+  height: 53px;
+  margin-right: 5px;
+  display: block;
+  background: url("/naver/src/images/sp/sp_search.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 384px 381px;
+  content: "";
+}
+.content__more-event__text {
+  margin-left: 16px;
+  font-size: 15px;
+  color: grey;
 }
 
 .weather {
