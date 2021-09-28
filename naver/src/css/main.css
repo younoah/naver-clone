@@ -1,6 +1,9 @@
+body {
+  background-color: #f4f6f8;
+}
+
 * {
   margin: 0;
-  background-color: #f4f6f8;
 }
 
 input,
@@ -194,13 +197,142 @@ h4 {
 .content {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 .content__ad {
   margin: 64px auto 0px auto;
 }
 .content__ad__image {
   width: 375px;
+}
+.content__card {
+  max-height: 680px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-left: 40px;
+}
+.content__card__item {
+  width: 31.8vw;
+  margin: 0 16px 16px 0;
+  border-radius: 10px;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.06);
+  box-sizing: border-box;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.weather {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 156px;
+}
+.weather__wrap {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.weather__info {
+  display: flex;
+}
+.weather__info__image {
+  width: 42px;
+  min-width: 42px;
+  height: 42px;
+  margin: 8px;
+  display: block;
+  background: url("/naver/src/images/sp/sp_weather_animation.png");
+  background-repeat: no-repeat;
+  background-position: -47px -231px;
+  background-size: 472px 447px;
+  content: "";
+}
+.weather__info__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.weather__info__text p {
+  display: inline;
+  color: #00a8ff;
+}
+.weather__location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.weather__location__image {
+  width: 16px;
+  height: 16px;
+  margin: 0 12px 0 4px;
+  display: inline-block;
+  background: url("/naver/src/images/sp/sp_search.png");
+  background-repeat: no-repeat;
+  background-position: -297px -297px;
+  background-size: 384px 381px;
+  content: "";
+}
+.weather__location p {
+  font-size: 15px;
+  color: grey;
+}
+.weather__more {
+  margin: 0 auto;
+  color: grey;
+}
+
+.vaccine {
+  height: 79px;
+}
+
+.covid {
+  height: 384px;
+  margin-bottom: 0;
+}
+
+.stock {
+  height: 326px;
+}
+
+.now {
+  height: 230px;
+  margin-bottom: 60px;
+}
+
+.system {
+  height: 50px;
+  margin-right: 0;
+}
+
+.card {
+  height: 178px;
+  margin-right: 0;
+}
+
+.shopping {
+  height: 230px;
+  margin-right: 0;
+}
+
+@media (max-width: 1111px) {
+  .content__card {
+    max-height: 1000px;
+  }
+
+  .content__card__item {
+    width: 48vw;
+  }
+}
+@media (max-width: 640px) {
+  .content__card {
+    max-height: none;
+  }
+
+  .content__card__item {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

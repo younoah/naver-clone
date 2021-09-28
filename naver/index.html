@@ -72,7 +72,7 @@
       <!-- NavBar -->
       <nav class="navbar">
         <ul class="navbar__list">
-          <li class="navbar__shortcut news">
+          <li class="navbar__shortcut">
             <a href="#" class="navbar__shortcut__link">
               <img
                 src="./src/images/shorcut/news.png"
@@ -82,7 +82,7 @@
               <div class="navbar__shortcut__text">뉴스판</div>
             </a>
           </li>
-          <li class="navbar__shortcut shopping">
+          <li class="navbar__shortcut">
             <a href="#" class="navbar__shortcut__link">
               <img
                 src="./src/images/shorcut/shopping.png"
@@ -92,7 +92,7 @@
               <div class="navbar__shortcut__text">쇼핑판</div>
             </a>
           </li>
-          <li class="navbar__shortcut stock">
+          <li class="navbar__shortcut">
             <a href="#" class="navbar__shortcut__link">
               <img
                 src="./src/images/shorcut/stock.png"
@@ -102,7 +102,7 @@
               <div class="navbar__shortcut__text">경제지표판</div>
             </a>
           </li>
-          <li class="navbar__shortcut sports">
+          <li class="navbar__shortcut">
             <a href="#" class="navbar__shortcut__link">
               <img
                 src="./src/images/shorcut/sports.png"
@@ -112,7 +112,7 @@
               <div class="navbar__shortcut__text">스포츠판</div>
             </a>
           </li>
-          <li class="navbar__shortcut mail">
+          <li class="navbar__shortcut">
             <a href="#" class="navbar__shortcut__link">
               <img
                 src="./src/images/shorcut/mail.png"
@@ -122,7 +122,7 @@
               <div class="navbar__shortcut__text">메일</div>
             </a>
           </li>
-          <li class="navbar__shortcut cafe">
+          <li class="navbar__shortcut">
             <a href="#" class="navbar__shortcut__link">
               <img
                 src="./src/images/shorcut/cafe.png"
@@ -132,7 +132,7 @@
               <div class="navbar__shortcut__text">카페</div>
             </a>
           </li>
-          <li class="navbar__shortcut blog">
+          <li class="navbar__shortcut">
             <a href="#" class="navbar__shortcut__link">
               <img
                 src="./src/images/shorcut/cafe.png"
@@ -142,7 +142,7 @@
               <div class="navbar__shortcut__text">블로그</div>
             </a>
           </li>
-          <li class="navbar__shortcut more-shortcut">
+          <li class="navbar__shortcut-shortcut">
             <a href="#" class="navbar__shortcut__link">
               <img
                 src="./src/images/shorcut/more.png"
@@ -167,14 +167,38 @@
 
         <!-- Card -->
         <div class="content__card">
-          <div class="content__card__item weather"></div>
-          <div class="content__card__item vaccine"></div>
-          <div class="content__card__item covid"></div>
-          <div class="content__card__item stock"></div>
-          <div class="content__card__item now"></div>
-          <div class="content__card__item system"></div>
-          <div class="content__card__item card"></div>
-          <div class="content__card__item shopping"></div>
+          <div class="content__card__item weather">
+            <div class="weather__wrap">
+              <div class="weather__info">
+                <span class="weather__info__image"></span>
+                <div class="weather__info__text">
+                  <strong>24°C 서울</strong>
+                  <span
+                    >미세
+                    <p>좋음</p>
+                    · 초미세
+                    <p>좋음</p>
+                  </span>
+                </div>
+              </div>
+              <a href="#" class="weather__location">
+                <p>경기도 고양시</p>
+                <span class="weather__location__image"></span>
+              </a>
+            </div>
+            <a class="weather__more">
+              위치 찾기를 눌러 현 위치의 시간대별 · 주간날씨와
+              <br />
+              미세먼지 예보를 여기에서 바로 보세요
+            </a>
+          </div>
+          <div class="content__card__item vaccine">백신</div>
+          <div class="content__card__item covid">코로나</div>
+          <div class="content__card__item stock">주식</div>
+          <div class="content__card__item now">now</div>
+          <div class="content__card__item system">시스템</div>
+          <div class="content__card__item card">카드</div>
+          <div class="content__card__item shopping">쇼핑</div>
         </div>
 
         <!-- MoreEvent -->

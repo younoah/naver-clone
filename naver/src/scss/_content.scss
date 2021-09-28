@@ -3,11 +3,204 @@
 .content {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  // align-items: center;
+
   &__ad {
     margin: 64px auto 0px auto;
     &__image {
       width: 375px;
     }
   }
+
+  &__card {
+    $gap: 16px;
+    max-height: 680px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 40px;
+
+    &__item {
+      width: 31.8vw;
+      margin: 0 $gap $gap 0;
+      border-radius: 10px;
+      box-shadow: 0 1px 4px 0 rgba(black, 0.06);
+      box-sizing: border-box;
+      background-color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+.weather {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 156px;
+
+  &__wrap {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  &__info {
+    display: flex;
+
+    &__image {
+      width: 42px;
+      min-width: 42px;
+      height: 42px;
+      margin: 8px;
+      @include setImage(
+        $url: '/naver/src/images/sp/sp_weather_animation.png',
+        $size: 472px 447px,
+        $position: -47px -231px
+      );
+    }
+
+    &__text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      p {
+        display: inline;
+        color: #00a8ff;
+      }
+    }
+  }
+
+  &__location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__image {
+      width: 16px;
+      height: 16px;
+      margin: 0 12px 0 4px;
+      @include setImage(
+        $url: '/naver/src/images/sp/sp_search.png',
+        $size: 384px 381px,
+        $position: -297px -297px,
+        $display: inline-block
+      );
+    }
+
+    p {
+      font-size: 15px;
+      color: grey;
+    }
+  }
+
+  &__more {
+    margin: 0 auto;
+    color: grey;
+  }
+}
+.vaccine {
+  height: 79px;
+}
+.covid {
+  height: 384px;
+  margin-bottom: 0;
+}
+.stock {
+  height: 326px;
+}
+.now {
+  height: 230px;
+  margin-bottom: 60px;
+}
+.system {
+  height: 50px;
+  margin-right: 0;
+}
+.card {
+  height: 178px;
+  margin-right: 0;
+}
+.shopping {
+  height: 230px;
+  margin-right: 0;
+}
+
+@media (max-width: 1111px) {
+  .content__card {
+    max-height: 1000px;
+  }
+
+  .content__card__item {
+    width: 48vw;
+  }
+
+  // .weather {
+  //   order: 0;
+  // }
+  // .vaccine {
+  //   order: 1;
+  // }
+  // .covid {
+  //   order: 2;
+  // }
+  // .stock {
+  //   order: 3;
+  //   margin-bottom: 16px;
+  // }
+  // .now {
+  //   order: 4;
+  //   margin-bottom: 0;
+  // }
+  // .system {
+  //   order: 5;
+  //   margin-right: 0;
+  // }
+  // .card {
+  //   order: 6;
+  //   margin-right: 0;
+  // }
+  // .shopping {
+  //   order: 7;
+  //   margin-right: 0;
+  // }
+}
+
+@media (max-width: 640px) {
+  .content__card {
+    max-height: none;
+  }
+
+  .content__card__item {
+    width: 100%;
+  }
+
+  // .weather {
+  //   order: 0;
+  // }
+  // .vaccine {
+  //   order: 1;
+  // }
+  // .covid {
+  //   order: 2;
+  // }
+  // .stock {
+  //   order: 3;
+  // }
+  // .now {
+  //   order: 4;
+  // }
+  // .system {
+  //   order: 5;
+  //   margin-bottom: 16px;
+  // }
+  // .card {
+  //   order: 6;
+  //   margin-bottom: 0;
+  // }
+  // .shopping {
+  //   display: none;
+  // }
 }
