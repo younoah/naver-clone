@@ -338,7 +338,38 @@ a {
 }
 
 .system {
-  height: 326px;
+  display: flex;
+  flex-direction: column;
+}
+.system__image {
+  display: block;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+.system__wrap {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.system__wrap__image {
+  width: 44px;
+  height: 44px;
+  margin: 16px;
+  display: block;
+  background: url("/naver/src/images/sp/sp_search.png");
+  background-repeat: no-repeat;
+  background-position: -261px -135px;
+  background-size: 384px 381px;
+  content: "";
+}
+.system__wrap__text {
+  margin-left: 8px;
+  font-size: 16px;
+}
+.system__wrap__text p {
+  font-size: 12px;
+  color: grey;
 }
 
 .now {

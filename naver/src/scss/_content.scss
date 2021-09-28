@@ -167,7 +167,42 @@
 }
 
 .system {
-  height: 326px;
+  display: flex;
+  flex-direction: column;
+
+  &__image {
+    display: block;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+  }
+
+  &__wrap {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    &__image {
+      width: 44px;
+      height: 44px;
+      margin: 16px;
+      @include setImage(
+        $url: '/naver/src/images/sp/sp_search.png',
+        $size: 384px 381px,
+        $position: -261px -135px
+      );
+    }
+
+    &__text {
+      margin-left: 8px;
+      font-size: 16px;
+
+      p {
+        font-size: 12px;
+        color: grey;
+      }
+    }
+  }
 }
 
 .now {
