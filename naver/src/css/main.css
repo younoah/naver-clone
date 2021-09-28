@@ -381,7 +381,38 @@ a {
 }
 
 .card-lg {
-  height: 326px;
+  display: flex;
+  flex-direction: column;
+}
+.card-lg__image {
+  display: block;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+.card-lg__wrap {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.card-lg__wrap__image {
+  width: 56px;
+  height: 56px;
+  margin: 8px;
+  display: block;
+  background: url("/naver/src/images/sp/sp_search.png");
+  background-repeat: no-repeat;
+  background-position: -261px -135px;
+  background-size: 384px 381px;
+  content: "";
+}
+.card-lg__wrap__text {
+  margin-left: 8px;
+  font-size: 16px;
+}
+.card-lg__wrap__text p {
+  font-size: 12px;
+  color: grey;
 }
 
 @media (max-width: 1024px) {
