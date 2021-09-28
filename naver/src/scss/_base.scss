@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  background-color: #f4f6f8;
+}
+
+input,
+button {
+  border: none;
+}
+
+input:focus {
+  outline: opacify($color: #fff, $amount: 1);
+}
+
+button {
+  background: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+ol,
+ul,
+li {
+  padding-left: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+em {
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  padding: 0;
+}
+
+.blind {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}

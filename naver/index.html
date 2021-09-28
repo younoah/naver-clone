@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./src/images/symbol/naver-symbol.png" />
+    <link rel="stylesheet" href="./src/css/main.css" />
+    <title>NAVER</title>
+  </head>
+  <body>
+    <main class="app">
+      <!-- Header -->
+      <header class="header">
+        <button
+          class="header__menu"
+          type="button"
+          aria-label="메뉴 버튼"
+        ></button>
+        <nav class="header__mydata">
+          <ul class="header__mydata__list">
+            <li class="header__mydata__list__item">
+              <a
+                class="header__mydata__list__item__link qr"
+                href="#"
+                aria-label="QR 체크인"
+              ></a>
+            </li>
+            <li class="header__mydata__list__item">
+              <a
+                class="header__mydata__list__item__link npay"
+                href="#"
+                aria-label="네이버 페이"
+              ></a>
+            </li>
+            <li class="header__mydata__list__item">
+              <a
+                class="header__mydata__list__item__link alert"
+                href="#"
+                aria-label="알림"
+              ></a>
+            </li>
+            <li class="header__mydata__list__item">
+              <a
+                class="header__mydata__list__item__link na"
+                href="#"
+                aria-label="마이메뉴"
+              ></a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- SearchBar -->
+      <form class="searchbar" action="#" method="#">
+        <a href="#" class="searchbar__link">
+          <span class="searchbar__link__logo"></span>
+          <span class="blind">네이버 로고</span>
+        </a>
+        <label for="search" class="blind">검색어 입력</label>
+        <input
+          class="searchbar__input"
+          type="search"
+          id="search"
+          title="검색어를 입력해주세요."
+          placeholder="검색어를 입력해주세요."
+          autocomplete="off"
+        />
+        <button type="submit" class="searchbar__button-voice">
+          <span class="earchbar__button-voice__image"></span>
+          <span class="blind">음성 검색</span>
+        </button>
+      </form>
+
+      <!-- NavBar -->
+      <nav class="navbar">
+        <ul class="navbar__list-shortcut">
+          <li class="navbar__list-shortcut__item news">
+            <a href="#" class="navbar__list-shortcut__item__link">
+              <img
+                src="./src/images/shorcut/news.png"
+                alt="뉴스판"
+                class="navbar__list-shortcut__item__link__image"
+              />
+              <div class="navbar__list-shortcut__item__link__text">뉴스판</div>
+            </a>
+          </li>
+          <li class="navbar__list-shortcut__item shopping">
+            <a href="#" class="navbar__list-shortcut__item__link">
+              <img
+                src="./src/images/shorcut/shopping.png"
+                alt="쇼핑판"
+                class="navbar__list-shortcut__item__link__image"
+              />
+              <div class="navbar__list-shortcut__item__link__text">쇼핑판</div>
+            </a>
+          </li>
+          <li class="navbar__list-shortcut__item stock">
+            <a href="#" class="navbar__list-shortcut__item__link">
+              <img
+                src="./src/images/shorcut/stock.png"
+                alt="경제지표판"
+                class="navbar__list-shortcut__item__link__image"
+              />
+              <div class="navbar__list-shortcut__item__link__text">
+                경제지표판
+              </div>
+            </a>
+          </li>
+          <li class="navbar__list-shortcut__item sports">
+            <a href="#" class="navbar__list-shortcut__item__link">
+              <img
+                src="./src/images/shorcut/sports.png"
+                alt="스포츠판"
+                class="navbar__list-shortcut__item__link__image"
+              />
+              <div class="navbar__list-shortcut__item__link__text">
+                스포츠판
+              </div>
+            </a>
+          </li>
+          <li class="navbar__list-shortcut__item mail">
+            <a href="#" class="navbar__list-shortcut__item__link">
+              <img
+                src="./src/images/shorcut/mail.png"
+                alt="메일"
+                class="navbar__list-shortcut__item__link__image"
+              />
+              <div class="navbar__list-shortcut__item__link__text">메일</div>
+            </a>
+          </li>
+          <li class="navbar__list-shortcut__item cafe">
+            <a href="#" class="navbar__list-shortcut__item__link">
+              <img
+                src="./src/images/shorcut/cafe.png"
+                alt="카페"
+                class="navbar__list-shortcut__item__link__image"
+              />
+              <div class="navbar__list-shortcut__item__link__text">카페</div>
+            </a>
+          </li>
+          <li class="navbar__list-shortcut__item blog">
+            <a href="#" class="navbar__list-shortcut__item__link">
+              <img
+                src="./src/images/shorcut/cafe.png"
+                alt="블로그"
+                class="navbar__list-shortcut__item__link__image"
+              />
+              <div class="navbar__list-shortcut__item__link__text">블로그</div>
+            </a>
+          </li>
+          <li class="navbar__list-shortcut__item more-shortcut">
+            <a href="#" class="navbar__list-shortcut__item__link">
+              <img
+                src="./src/images/shorcut/more.png"
+                alt="more"
+                class="navbar__list-shortcut__item__link__image"
+              />
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Content -->
+      <section class="content">
+        <!-- AdBar -->
+        <div class="content__ad">
+          <img
+            src="./src/images/ad/ad.png"
+            alt="광고"
+            class="content__ad__image"
+          />
+          <span class="blind">광고</span>
+        </div>
+
+        <!-- Card -->
+        <div class="content__card">
+          <div class="content__card__item weather"></div>
+          <div class="content__card__item vaccine"></div>
+          <div class="content__card__item covid"></div>
+          <div class="content__card__item stock"></div>
+          <div class="content__card__item now"></div>
+          <div class="content__card__item system"></div>
+          <div class="content__card__item card"></div>
+          <div class="content__card__item shopping"></div>
+        </div>
+
+        <!-- MoreEvent -->
+        <div class="content__more-event">
+          <a href="#" class="content__more-event__link">
+            <span class="content__more-event__link__image"></span>
+            <span class="content__more-event__link__text">이벤트 모아보기</span>
+            <span class="blind">이벤트 모아보기</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer__util">
+          <a href="#" class="footer__util__link">로그아웃</a>
+          <a href="#" class="footer__util__link">전체서비스</a>
+          <a href="#" class="footer__util__link">PC버전</a>
+        </div>
+        <div class="footer__util">
+          <a href="#" class="footer__util__link">이용약관</a>
+          <a href="#" class="footer__util__link">개인정보처리방침</a>
+          <a href="#" class="footer__util__link">고객센터</a>
+        </div>
+        <div class="footer__util">
+          <a href="#" class="footer__util__link">
+            <span class="footer__util__logo"></span>
+          </a>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
