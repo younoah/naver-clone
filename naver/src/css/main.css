@@ -205,14 +205,15 @@ a {
   width: 375px;
 }
 .content__card {
-  max-height: 600px;
+  max-height: 33vw;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  margin-left: 16px;
+  margin: 16px;
 }
 .content__card__item {
-  width: 31.8vw;
+  width: 32vw;
   margin: 0 16px 16px 0;
   border-radius: 10px;
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.06);
@@ -491,7 +492,7 @@ a {
   color: grey;
 }
 
-@media (max-width: 1024px) {
+@media screen and (max-width: 1652px) {
   .content__card {
     max-height: 1000px;
   }
@@ -500,7 +501,16 @@ a {
     width: 48vw;
   }
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 1024px) {
+  .content__card {
+    max-height: 1000px;
+  }
+
+  .content__card__item {
+    width: 47vw;
+  }
+}
+@media screen and (max-width: 768px) {
   .content__card {
     max-height: none;
   }
