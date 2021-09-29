@@ -1,4 +1,4 @@
-@import './mixins/image';
+@import './mixins';
 
 .content {
   display: flex;
@@ -127,8 +127,7 @@
       @include setImage(
         $url: '/naver/src/images/sp/sp_search.png',
         $size: 384px 381px,
-        $position: -297px -297px,
-        $display: inline-block
+        $position: -297px -297px
       );
     }
 
@@ -158,8 +157,7 @@
     @include setImage(
       $url: '/naver/src/images/sp/sp_search.png',
       $size: 384px 381px,
-      $position: -354px -294px,
-      $display: inline-block
+      $position: -354px -294px
     );
   }
 }
