@@ -64,10 +64,11 @@ a {
   height: 44px;
   margin: 8px;
   display: inline-block;
+  display: block;
   background: url("/naver/src/images/sp/sp-main-search.png");
+  background-repeat: no-repeat;
   background-position: 0 -145px;
   background-size: 323px 234px;
-  background-repeat: no-repeat;
 }
 .header__mydata__list {
   display: flex;
@@ -78,35 +79,39 @@ a {
 .header__mydata__list__item .qr {
   width: 64px;
   height: 29px;
+  display: block;
   background: url("/naver/src/images/sp/sp-main-search.png");
+  background-repeat: no-repeat;
   background-position: -196px -145px;
   background-size: 323px 234px;
-  background-repeat: no-repeat;
 }
 .header__mydata__list__item .npay {
   margin-left: 8px;
   width: 40px;
   height: 40px;
+  display: block;
   background: url("/naver/src/images/sp/sp-main-search.png");
+  background-repeat: no-repeat;
   background-position: -90px -194px;
   background-size: 323px 234px;
-  background-repeat: no-repeat;
 }
 .header__mydata__list__item .alert {
   width: 40px;
   height: 40px;
+  display: block;
   background: url("/naver/src/images/sp/sp-main-search.png");
+  background-repeat: no-repeat;
   background-position: -47px -194px;
   background-size: 323px 234px;
-  background-repeat: no-repeat;
 }
 .header__mydata__list__item .na {
   width: 44px;
   height: 44px;
+  display: block;
   background: url("/naver/src/images/sp/sp-main-search.png");
+  background-repeat: no-repeat;
   background-position: -262px -77px;
   background-size: 323px 234px;
-  background-repeat: no-repeat;
 }
 
 .searchbar {
@@ -130,10 +135,11 @@ a {
 .searchbar__logo__image {
   width: 40px;
   height: 40px;
+  display: block;
   background: url("/naver/src/images/sp/sp-main-search.png");
+  background-repeat: no-repeat;
   background-position: 0 -194px;
   background-size: 323px 234px;
-  background-repeat: no-repeat;
   background-color: #03c75a;
 }
 .searchbar__input {
@@ -145,10 +151,11 @@ a {
 .searchbar__button-voice {
   width: 34px;
   height: 34px;
+  display: block;
   background: url("/naver/src/images/sp/sp-main-search.png");
+  background-repeat: no-repeat;
   background-position: -135px -194px;
   background-size: 323px 234px;
-  background-repeat: no-repeat;
   background-color: #03c75a;
 }
 
@@ -223,20 +230,22 @@ a {
   width: 13px;
   height: 13px;
   margin: 2px 5px 0 5px;
+  display: block;
   background: url("/naver/src/images/sp/sp_search.png");
+  background-repeat: no-repeat;
   background-position: -288px -226px;
   background-size: 384px 381px;
-  background-repeat: no-repeat;
 }
 .content__more-event__image {
   margin-left: 24px;
   width: 56px;
   height: 53px;
   margin-right: 5px;
+  display: block;
   background: url("/naver/src/images/sp/sp_search.png");
+  background-repeat: no-repeat;
   background-position: 0 0;
   background-size: 384px 381px;
-  background-repeat: no-repeat;
 }
 .content__more-event__text {
   margin-left: 16px;
@@ -263,10 +272,11 @@ a {
   min-width: 42px;
   height: 42px;
   margin: 8px;
+  display: block;
   background: url("/naver/src/images/sp/sp_weather_animation.png");
+  background-repeat: no-repeat;
   background-position: -47px -231px;
   background-size: 472px 447px;
-  background-repeat: no-repeat;
 }
 .weather__info__text {
   display: flex;
@@ -286,10 +296,11 @@ a {
   width: 16px;
   height: 16px;
   margin: 0 12px 0 4px;
+  display: block;
   background: url("/naver/src/images/sp/sp_search.png");
+  background-repeat: no-repeat;
   background-position: -297px -297px;
   background-size: 384px 381px;
-  background-repeat: no-repeat;
 }
 .weather__location p {
   font-size: 15px;
@@ -312,10 +323,11 @@ a {
   width: 16px;
   height: 16px;
   margin: 8px;
+  display: block;
   background: url("/naver/src/images/sp/sp_search.png");
+  background-repeat: no-repeat;
   background-position: -354px -294px;
   background-size: 384px 381px;
-  background-repeat: no-repeat;
 }
 
 .ai {
@@ -331,10 +343,11 @@ a {
   width: 40px;
   height: 40px;
   margin: 12px;
+  display: block;
   background: url("/naver/src/images/sp/sp_search.png");
+  background-repeat: no-repeat;
   background-position: -261px -135px;
   background-size: 384px 381px;
-  background-repeat: no-repeat;
 }
 .ai__text {
   margin-left: 8px;
@@ -376,10 +389,11 @@ a {
   width: 44px;
   height: 44px;
   margin: 16px;
+  display: block;
   background: url("/naver/src/images/sp/sp_search.png");
+  background-repeat: no-repeat;
   background-position: -261px -135px;
   background-size: 384px 381px;
-  background-repeat: no-repeat;
 }
 .system__wrap__text {
   margin-left: 8px;
@@ -401,10 +415,11 @@ a {
   height: 14px;
   margin: 24px;
   align-self: flex-start;
+  display: block;
   background: url("/naver/src/images/sp/sp_search.png");
+  background-repeat: no-repeat;
   background-position: -215px -318px;
   background-size: 384px 381px;
-  background-repeat: no-repeat;
 }
 .now__list {
   display: flex;
@@ -444,10 +459,11 @@ a {
   width: 56px;
   height: 56px;
   margin: 8px;
+  display: block;
   background: url("/naver/src/images/sp/sp_search.png");
+  background-repeat: no-repeat;
   background-position: -261px -135px;
   background-size: 384px 381px;
-  background-repeat: no-repeat;
 }
 .card-lg__wrap__text {
   margin-left: 8px;
@@ -473,7 +489,7 @@ a {
   }
 
   .content__card__item {
-    width: 47vw;
+    width: 48vw;
   }
 }
 @media screen and (max-width: 768px) {
@@ -502,10 +518,11 @@ a {
   width: 74px;
   height: 14px;
   margin: 0 auto;
+  display: block;
   background: url("/naver/src/images/sp/sp_main.png");
+  background-repeat: no-repeat;
   background-position: 0 -100px;
   background-size: 196px 182px;
-  background-repeat: no-repeat;
 }
 
 /*# sourceMappingURL=main.css.map */
