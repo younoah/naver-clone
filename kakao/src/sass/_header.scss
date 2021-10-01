@@ -1,0 +1,40 @@
+.header {
+  width: 100%;
+  font-size: 14px;
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1296px;
+    margin: 0 auto;
+    padding-top: 25px;
+  }
+
+  &__title {
+    font-size: 2em;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    &__list {
+      display: flex;
+      font-size: 16px;
+    }
+
+    &__item {
+      padding: 0 28px;
+    }
+  }
+
+  &__util {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    &__item {
+      i {
+        font-size: 18px;
+      }
+    }
+  }
+}

@@ -25,3 +25,58 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+.header {
+  width: 100%;
+  font-size: 14px;
+}
+
+.header__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 1296px;
+  margin: 0 auto;
+  padding-top: 25px;
+}
+
+.header__title {
+  font-size: 2em;
+}
+
+.header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+}
+
+.header__nav__item {
+  padding: 0 28px;
+}
+
+.header__util {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 24px;
+}
+
+.header__util__item i {
+  font-size: 18px;
+}
