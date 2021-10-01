@@ -1,0 +1,30 @@
+.main {
+  width: 100%;
+
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    max-width: 1296px;
+    margin: 0 auto;
+    padding-top: 25px;
+  }
+
+  &__title {
+    padding-top: 96px;
+    font-size: 46px;
+
+    &__wrap {
+      display: flex;
+      align-items: center;
+    }
+
+    &__image {
+      width: 72px;
+      margin-right: 12px;
+    }
+
+    &__text {
+      margin-top: 4px;
+    }
+  }
+}
